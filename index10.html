@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="colors">
+        <div id="blue">Blue books</div>
+        <div id="orange">Orange mangoes</div>
+        </div>
+</body>
+<script>
+//     1. Get the orange div element but its id
+// 2. Remove the child node from the DOM using parentNode and removeChild()
+var orange = document.getElementById('orange');
+orange.parentNode.childNodes[1].remove()
+</script>
+</html>

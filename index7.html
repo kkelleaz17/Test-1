@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Red{
+
+    }
+</style>
+<body>
+    <div id="navigation" class="navbar active">
+        <ul>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Search</a>
+        </ul>
+        </div>
+</body>
+<script>
+
+//6. Console.log whether or not the navigation div has a specific class
+//7. Remove a single class from the navigation div w/ remove()
+//8. Remove multiple classes from the navigation div w/ remove()
+var navigation = document.getElementById('navigation');
+console.log(navigation.classList)
+console.log(navigation.className);
+navigation.classList.add('Red');
+navigation.classList.add('Green');
+if(navigation.classList.contains('Red') === true){
+    console.log('It has the class Red');
+}
+navigation.classList.remove('Red')
+if(navigation.classList.contains('Green') === true){
+    console.log('It has the class Green');
+}
+navigation.classList.add('Green');
+navigation.classList.remove('Red');
+
+</script>
+
+</html>

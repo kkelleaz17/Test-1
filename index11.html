@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="colors">
+        <h1 id="color">h1 tag</h1>
+        </div>
+</body>
+<script>
+//     Get the h1 element by its id
+// 2. Get the h1 element’s parent with parentNode
+// 3. Create a new paragraph element
+// 4. Give the paragraph element an id attribute called “color”
+// 5. Add the text “new replacement element” using textContent
+// 6. Replace the h1 node with the new paragraph element using replaceChild()
+var h1 = document.getElementById('color');
+var parent = h1.parentNode;
+var p = document.createElement('p');
+p.id = 'color';
+p.textContent='new replacement element';
+// parent.replaceChild();
+parent.replaceChild(p,parent.childNodes[1])
+</script>
+</html>
